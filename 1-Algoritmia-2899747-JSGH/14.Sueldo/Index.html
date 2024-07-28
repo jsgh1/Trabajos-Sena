@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salarioMin=1300000;
+        let subtransporte=130000;
+        let valorDia=130000;
+        let diasTrabajados=47;
+        let salario=valorDia*diasTrabajados;
+        let pago;
+
+        console.log("El salario inicial es de $"+salario);
+        
+        if(salario>salarioMin*2){
+            salario=salario+subtransporte;
+        }else{
+            salario=salario+0;
+        }
+
+        let salud=salario*0.12;
+        let pension=salario*0.16;
+        let arl=salario*0.052;
+        let deducible=salud+pension+arl;
+
+        console.log("Su salud es de $"+salud);
+        console.log("Su pension es de $"+pension);
+        console.log("Su arl es de $"+arl);
+
+        if(salario>salarioMin*4){
+            salario=salario*0.04;
+        }else{
+            salario=salario+0;
+        }
+
+        pago=salario-deducible;
+
+        console.log("El total a pagar es de $"+pago);
+    </script>
+</body>
+</html>

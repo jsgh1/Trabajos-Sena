@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>  
+    <div class="container">
+      <div class="col-12 row formulario">
+        <div class="col-8 forma">
+          <form class="row g-3 needs-validation" novalidate onsubmit="return numeros()">
+            <div class="col-md-4">
+              <label for="txtnumero1" class="form-label">Numero 1</label>
+              <input type="text" class="form-control" id="txtnumero1" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="txtnumero2" class="form-label">Numero 2</label>
+              <input type="text" class="form-control" id="txtnumero2" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-10">
+              <button class="btn btn-primary" type="button" onclick="numeros()">Submit form</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-4 respuesta">
+          <h1>RESPUESTA</h1>
+          <div id="retorno">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/validar.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/mayor-igual.js"></script>
+</body>
+</html>

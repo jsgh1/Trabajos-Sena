@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js/uno a cinco.js"></script>
+    <script>
+        let limite = 5;
+        let pares = 0;
+        let impares = 0;
+
+        for (let numero1 = 1; numero1 <= limite; numero1++) {
+            for (let numero2 = 1; numero2 <= limite; numero2++) {
+                let resultado = numero1 * numero2;
+                if (resultado % 2 == 0) {
+                    console.log(unoAcinco(numero1 + " x " + numero2 + " = " + resultado + " buzz"));
+                    pares++;
+                } else {
+                    console.log(unoAcinco(numero1 + " x " + numero2 + " = " + resultado + " bass"));
+                    impares++;
+                }
+            }
+        }
+        console.log(unoAcinco("Número de pares = " + pares));
+        console.log(unoAcinco("Número de impares = " + impares));
+
+        for (let numero1 = 1; numero1 <= limite; numero1++) {
+            for (let numero2 = 1; numero2 <= limite; numero2++) {
+                let resultado = numero1 * numero2;
+                if (resultado % 2 == 0) {
+                    console.log(unoAcincoExp(numero1 + " x " + numero2 + " = " + resultado + " buzz"));
+                    pares++;
+                } else {
+                    console.log(unoAcincoExp(numero1 + " x " + numero2 + " = " + resultado + " bass"));
+                    impares++;
+                }
+            }
+        }
+        console.log(unoAcincoExp("Número de pares = " + pares));
+        console.log(unoAcincoExp("Número de impares = " + impares));
+    </script>
+</body>
+</html>

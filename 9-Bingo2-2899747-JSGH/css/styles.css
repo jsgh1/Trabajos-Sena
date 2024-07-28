@@ -1,0 +1,141 @@
+body {
+    text-align: justify;
+    background: rgb(214, 224, 214);
+    background: radial-gradient(circle, rgb(194, 227, 236) 3%, rgb(126, 173, 190) 40%, rgb(105, 149, 165) 100%);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carton {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 55px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: transparent;
+    margin-top: 50px;
+    border: 15px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+}
+
+.titulo p {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.titulo p:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .titulo p {
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    .titulo p {
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+}
+
+.numero {
+    border: 2px solid #444;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.numero:hover {
+    box-shadow: #444 15px 15px 15px;
+    transform: scale(1.0);
+}
+
+.numero.clicked {
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+
+}
+
+
+.boton {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container_botones {
+    margin-top: -600px;
+}
+
+.cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #444;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px auto;
+    border-radius: 15px;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cuadrado:hover {
+    background-color: #f0f0f0;
+}
+
+.Boton {
+    background-color: #96eced;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid #333;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Boton:hover {
+    background-color: #ddd;
+    color: #000;
+}

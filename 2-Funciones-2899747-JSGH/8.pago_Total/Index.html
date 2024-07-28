@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago total</title>
+    <script src="./js/pagoTotal.js"></script>
+</head>
+<body>
+    <script>
+        let pdias=23;
+        let pvdia=300000;
+        console.log("El subsidio de salud es: "+subsidios("salud",pdias,pvdia));
+        console.log("El subsidio de pension es: "+subsidios("pension",pdias,pvdia));
+        console.log("El subsidio de el arl es: "+subsidios("arl",pdias,pvdia));
+        console.log("El pago total de la persona con su respectivo deducible es: "+pagoTotal(pdias,pvdia)+"\n"+"\n");
+
+        console.log("El subsidio de salud es: "+subsidioExp("salud",pdias,pvdia));
+        console.log("El subsidio de salud es: "+subsidioExp("pension",pdias,pvdia));
+        console.log("El subsidio de salud es: "+subsidioExp("arl",pdias,pvdia));
+        console.log("El pago total de la persona con su respectivo deducible es: "+pagoTotalExp(pdias,pvdia));
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas del 1,2,3,4 y 5</title>
+</head>
+<body>
+    <script>
+        
+        let numero1;
+        let numero2;
+        let limite;
+        let pares;
+        let impares;
+        let resultado;
+
+        limite=5;
+        pares=0;
+        impares=0;
+
+        for(numero1=1;numero1<=limite;numero1++){
+            for(numero2=1;numero2<=limite;numero2++){
+                resultado=numero1*numero2;
+                if(resultado%2==0){
+                    console.log(numero1+"x"+numero2+"="+resultado+" Buzz");
+                    pares=pares+1;
+                }else{
+                    console.log(numero1+"x"+numero2+"="+resultado+" Bass");
+                    impares=impares+1;
+                }
+            }
+        }
+        console.log("Cantidad de Buzz ="+pares);
+        console.log("Cantidad de Bass ="+impares);
+        
+    </script>
+</body>
+</html>

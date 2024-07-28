@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porcentajes de 3 notas</title>
+    <script src="./js/porcentajesysuma.js"></script>
+</head>
+<body>
+    <script>
+        let porcentaje1= porcentajes(3.4,0.3);
+        let porcentaje2= porcentajes(2.5,0.3);
+        let porcentaje3= porcentajes(4.3,0.4);
+        let suma,porcentajeFinal;
+        suma=porcentaje1+porcentaje2+porcentaje3;
+        console.log("El porcentaje de la nota 3.4 es: "+porcentaje1);
+        console.log("El porcentaje de la nota 2.5 es: "+porcentaje2);
+        console.log("El porcentaje de la nota 4.3 es: "+porcentaje3);
+        console.log("La suma de los porcentajes de las notas es: "+suma+"\n"+"\n");
+
+        let porcentajeExp1= porcentajeExp(3,0.3);
+        let porcentajeExp2= porcentajeExp(5,0.3);
+        let porcentajeExp3= porcentajeExp(4,0.4);
+        let sumaExp,porcentajeFinalExp;
+        sumaExp=porcentajeExp1+porcentajeExp2+porcentajeExp3;
+        console.log("El porcentaje de la nota 3.4 es: "+porcentajeExp1);
+        console.log("El porcentaje de la nota 2.5 es: "+porcentajeExp2);
+        console.log("El porcentaje de la nota 4.3 es: "+porcentajeExp3);
+        console.log("La suma de los porcentajes de las notas es: "+sumaExp);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diaTrabajados=45;
+        let salarioDia=133000;
+        let salario=salarioDia*diaTrabajados;
+        let salud=salario*0.12;
+        let pension=salario*0.16;
+        let arl=salario*0.052;
+        let descuento=salud+pension+arl;
+        let pagoTotal=salario-descuento;
+        console.log("Su salud es de $"+salud);
+        console.log("Su pension es de $"+pension);
+        console.log("Su arl es de $"+arl);
+        console.log("Su pago total es de $"+pagoTotal);
+    </script>
+</body>
+</html>

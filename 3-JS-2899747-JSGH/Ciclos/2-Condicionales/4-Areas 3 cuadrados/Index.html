@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de tres cuadrados y cual es mayor o si son iguales</title>
+</head>
+<body>
+    <script>
+        
+        let area1;
+        let area2;
+        let area3;
+        let lado1=12;
+        let lado2=13;
+        let lado3=14;
+
+        area1=lado1*lado1;
+        area2=lado2*lado2;
+        area3=lado3*lado3;
+
+        if(area1==area2 && area2==area3 && area3==area1){
+            console.log(area1);
+            console.log(area2);
+            console.log(area3);
+        }
+        else{
+            if(area1>area2 && area2>area3){
+                console.log(area1+" es el area mas gránde");
+            }
+            else{
+                if(area1<area2 && area2>area3){
+                    console.log(area2+" es el area más grande")
+                }
+                else{
+                    console.log(area3+" es el area más grande")
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

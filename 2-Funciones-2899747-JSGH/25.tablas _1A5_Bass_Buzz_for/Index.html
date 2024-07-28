@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas del 1 al 5 con bass y buzz</title>
+    <script src="./js/tablas.js"></script>
+</head>
+<body>
+    <script>
+        let contar1=0;
+        let contar2=0;
+
+        for(inicio1=1;inicio1<=5;inicio1++){
+            for(inicio2=1;inicio2<=5;inicio2++){
+                if(tablas(inicio1,inicio2%2==0)){
+                    contar1=contar1+1;
+                    console.log(inicio1+"x"+inicio2+"="+tablas(inicio1,inicio2)+" Buzz");
+                }else{
+                    contar2=contar2+1;
+                    console.log(inicio1+"x"+inicio2+"="+tablas(inicio1,inicio2)+" Bass");
+                }
+            }
+        }
+        console.log("La cantidad de Buzz es: "+contar1);
+        console.log("La cantidad de Bass es: "+contar2);
+    </script>
+</body>
+</html>

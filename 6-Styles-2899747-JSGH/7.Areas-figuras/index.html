@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-12 row formulario">
+          <div class="col-8 forma">
+            <form class="row g-3 needs-validation" novalidate onsubmit="return figuras()">
+              <div class="col-md-4">
+                <label for="txtbase" class="form-label">Base</label>
+                <input type="text" class="form-control" id="txtbase" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+              </div>
+                <div class="col-5">                
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Operaciones
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" onclick="seleccionarOperacion('cuadrado')">Cuadrado</a></li>
+                      <li><a class="dropdown-item" onclick="seleccionarOperacion('triangulo')">Triangulo</a></li>
+                      <li><a class="dropdown-item" onclick="seleccionarOperacion('rectangulo')">Rectangulo</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              <div class="col-4">
+                <label for="txtaltura" class="form-label">Altura</label>
+                <input type="text" class="form-control" id="txtaltura" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+              </div>
+              <div class="col-10">
+                <button class="btn btn-primary" type="button" onclick="figuras()">Operar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-4 respuesta">
+            <h1>RESPUESTA</h1>
+            <div id="area"></div>
+            <div id="figura"></div> <!-- Div para mostrar la figura -->
+          </div>
+        </div>
+      </div>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/areas.js"></script>
+    <script src="./js/validar.js"></script>
+</body>
+</html>

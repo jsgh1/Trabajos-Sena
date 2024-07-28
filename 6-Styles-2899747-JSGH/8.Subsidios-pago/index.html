@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-12 row formulario">
+          <div class="col-8 forma">
+            <form class="row g-3 needs-validation" novalidate onsubmit="return salario()">
+              <div class="col-md-4">
+                <label for="txtpago" class="form-label">Pago por dia</label>
+                <input type="text" class="form-control" id="txtpago" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+              </div>
+              <div class="col-4">
+                <label for="txtdias" class="form-label">Dias trabajados</label>
+                <input type="text" class="form-control" id="txtdias" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+              </div>
+              <div class="col-10">
+                <button class="btn btn-primary" type="button" onclick="salario()">Operar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-4 respuesta">
+            <h1>RESPUESTA</h1>
+            <div id="salud"></div>
+            <div id="pension"></div>
+            <div id="arl"></div>
+            <div id="pagoTotal"></div>
+          </div>
+        </div>
+      </div>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/pago-total.js"></script>
+    <script src="./js/validar.js"></script>
+</body>
+</html>

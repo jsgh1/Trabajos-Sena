@@ -1,0 +1,24 @@
+/**
+Estilos de Edades promedio y si son mayores o menores de edad y si el promedio tambien es mayor de edad
+Martin Stiben Narvaez
+Lunes 17 de Junio del 2024
+*/
+
+.formulario{
+    display: flexbox;
+    flex-wrap: nowrap;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+.forma, .respuesta{
+    border:2px solid #000;
+    margin:10px;
+    padding:5px;
+    border-radius: 6px;
+}
+
+.forma{
+    padding: 30px;
+}

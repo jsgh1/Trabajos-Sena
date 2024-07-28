@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pago total</title>
+    <script src="./js/Sueldo.js"></script>
+</head>
+<body>
+    <script>
+        let pvdia = 1600000;
+        let pdias = 30;
+        let salariopersona = salario(pdias,pvdia);
+        let subtransporte = subTransporte(pdias,pvdia);
+        let totalPagarPersona = pagoTotal(pdias,pvdia);
+        let saludv = salud(pdias,pvdia);
+        let pensionv = pension(pdias,pvdia);
+        let arlv = arl(pdias,pvdia);
+
+
+        console.log("Salario de la persona: "+salariopersona);
+        console.log("El subsidio de transporte de la persona es: "+subtransporte);
+        console.log("Salud: "+saludv);
+        console.log("Pension: "+pensionv);
+        console.log("Arl: "+arlv);
+        console.log("Total persona: "+totalPagarPersona);
+    </script>
+</body>
+</html>

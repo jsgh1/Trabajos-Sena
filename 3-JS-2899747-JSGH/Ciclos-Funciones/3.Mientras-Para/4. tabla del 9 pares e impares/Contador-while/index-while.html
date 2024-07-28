@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/tablaNueve.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        let num2 = 5;
+        num = 0;
+        num2 = 5;
+        while (num<num2) {
+            num = num+1;
+            resul = num * 9;
+            if (resul%2==0) {
+                console.log(tablaNueve(resul+" es par"));
+            } else {
+                console.log(tablaNueve(resul+" es impar"));
+            }
+        }
+        num = 0;
+        while (num<num2) {
+            num = num+1;
+            resul = num * 9;
+            if (resul%2==0) {
+                console.log(tablaNueveExp(resul+" es par"));
+            } else {
+                console.log(tablaNueveExp(resul+" es impar"));
+            }
+        }
+    </script>
+</body>
+</html>

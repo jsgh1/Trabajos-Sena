@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El sueldo de una persona</title>
+</head>
+<body>
+    <script>
+        
+        let salario=1500000;
+        let dias=43;
+        let valorDia;
+        let salud;
+        let pension;
+        let arl;
+        let transporte;
+        let salarioMin;
+        let deducible;
+
+        valorDia=salario/dias;
+        salario=dias*valorDia;
+
+        console.log("El salario de la persona es $"+salario);
+
+        if(salarioMin*2<salario){
+            salario=salario+1;
+        }else{
+            salario=salario+0;
+        }
+
+        salud=salario*0.12;
+        pension=salario*0.16;
+        arl=salario*0.052;
+
+        console.log("El subsidio de salud de la persona es $"+salud);
+        console.log("El subsidio de la pension de la persona es $"+pension);
+        console.log("El subsidio de el arl de la persona es $"+arl);
+
+        if(salarioMin*4){
+            salario=salario*0.04;
+        }else{
+            salario=salario+0;
+        }
+        deducible=salud+pension+arl
+        salario=salario-deducible
+        
+        console.log("El salario total de la persona es $"+salario);
+        
+    </script>
+</body>
+</html>

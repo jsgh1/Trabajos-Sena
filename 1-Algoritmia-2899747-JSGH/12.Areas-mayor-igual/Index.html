@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lado1=12;
+        let lado2=22;
+        let lado3=14;
+        let area1=lado1*lado1;
+        let area2=lado2*lado2;
+        let area3=lado3*lado3;
+        if(area1==area2 && area2==area3){
+            console.log("Las tres areas sin iguales");
+        }else if(area1>area2 && area2>area3){
+            console.log("El cuadrado 1 tiene el area mas grande");
+        }else if(area1<area2 && area2>area3){
+            console.log("El cuadrado 2 tiene el area mas grande");
+        }else{
+            console.log("El cuadrado 3 tiene el area mas grande");
+        }
+    </script>
+</body>
+</html>

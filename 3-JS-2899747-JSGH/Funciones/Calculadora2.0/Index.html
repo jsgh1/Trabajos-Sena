@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./js/calculadora.js"></script>
+    <style>
+        .calculator {
+            width: 350px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 15%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #313131;
+        }
+
+        .inputs {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-top: 2px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ffffff;
+            background-color: #aaaaaa;
+        }
+
+        .calculator input[type="text"] {
+            width: 323px;
+            height: 50px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5%;
+            background-color: #b7d3c4;
+        }
+
+        .operadores {
+            background-color: rgb(54, 54, 54);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+            margin: 10px;
+        }
+
+        .mas {
+            background-color: rgb(54, 54, 54);
+            color: white;
+            width: 50px;
+            height: 120px;
+            margin: 10px;
+            border-radius: 10%;
+        }
+
+        .c {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color:#fdd44b;
+            color: white;
+            margin-left: 10px;
+            margin-top: -5px;
+        }
+
+        .container_mas{
+            margin-left: 220px;
+            margin-top: -210px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="input-calculator" id="display" readonly>
+        <input class="inputs" type="button" value="7" onclick="addToDisplay('7')">
+        <input class="inputs" type="button" value="8" onclick="addToDisplay('8')">
+        <input class="inputs" type="button" value="9" onclick="addToDisplay('9')">
+        <input class="operadores" type="button" class="operadores" value="%" onclick="addToDisplay('%')">
+        <input class="operadores" type="button" class="operadores" value="%" onclick="addToDisplay('%')">
+        <br>
+        <input class="inputs" type="button" value="4" onclick="addToDisplay('4')">
+        <input class="inputs" type="button" value="5" onclick="addToDisplay('5')">
+        <input class="inputs" type="button" value="6" onclick="addToDisplay('6')">
+        <input class="operadores" type="button" class="operadores" value="*" onclick="addToDisplay('*')">
+        <br>
+        <input class="inputs" type="button" value="1" onclick="addToDisplay('1')">
+        <input class="inputs" type="button" value="2" onclick="addToDisplay('2')">
+        <input class="inputs" type="button" value="3" onclick="addToDisplay('3')">
+
+        <br>
+        <input class="inputs" type="button" value="." onclick="addToDisplay('.')">
+        <input class="inputs" type="button" value="0" onclick="addToDisplay('0')">
+        <input class="operadores" type="button" value="=" onclick="calculate()">
+
+        <br>
+
+        <br>
+
+        <input class="c" type="button" value="C" onclick="clearDisplay()">
+         <div class="container_mas">
+            <input class="mas" type="button" value="+" onclick="addToDisplay('+')">
+         </div>
+    </div>
+
+</body>
+
+</html>

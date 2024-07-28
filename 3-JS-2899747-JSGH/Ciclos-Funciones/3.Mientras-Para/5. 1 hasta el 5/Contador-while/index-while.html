@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/uno a cinco.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let numero1;
+        let numero2;
+        let limitante;
+        let contarPar;
+        let contarImpar;
+        let resultado;
+
+        numero1=0;
+        limitante=5;
+        contarImpar=0;
+        contarPar=0;
+
+        while(numero1<limitante){
+            numero1=numero1+1;
+            numero2=0;
+            while(numero2<limitante){
+                numero2=numero2+1;
+                resultado=numero1*numero2;
+                if(resultado%2==0){
+                    console.log(unoAcinco(numero1+"x"+numero2+"="+resultado+" Buzz"));
+                    contarPar=contarPar+1;
+                }else{
+                    console.log(unoAcinco(numero1+"x"+numero2+"="+resultado+" Bass"));
+                    contarImpar=contarImpar+1;
+                }
+            }          
+        }
+        console.log(unoAcinco("Cantidad de Buzz ="+contarPar));
+        console.log(unoAcinco("Cantidad de Bass ="+contarImpar));
+        numero1 = 0;
+        while(numero1<limitante){
+            numero1=numero1+1;
+            numero2=0;
+            while(numero2<limitante){
+                numero2=numero2+1;
+                resultado=numero1*numero2;
+                if(resultado%2==0){
+                    console.log(unoAcinco(numero1+"x"+numero2+"="+resultado+" Buzz"));
+                    contarPar=contarPar+1;
+                }else{
+                    console.log(unoAcinco(numero1+"x"+numero2+"="+resultado+" Bass"));
+                    contarImpar=contarImpar+1;
+                }
+            }          
+        }
+        console.log(unoAcinco("Cantidad de Buzz ="+contarPar));
+        console.log(unoAcinco("Cantidad de Bass ="+contarImpar));
+    </script>
+</body>
+</html>

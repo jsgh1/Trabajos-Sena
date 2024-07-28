@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/Favicon.png" type="image/x-icon">
+    </head> 
+<body>
+    <h1><b>Tabla periódica de los elementos</b></h1>
+    
+    <br>
+    <br>
+
+    <div class="imagen">
+      <img src="./img/elements.png" alt="">
+    </div>
+  
+    <div class="tabla-periodica">
+        <!-- Primera fila -->
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleHidrogeno">H<br>1<br>Hidrógeno</div>
+        <div class="elemento gases-nobles" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleHelio">He<br>2<br>Helio</div> 
+
+        <!-- Segunda fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleLitio">Li<br>3<br>Litio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleBerilio">Be<br>4<br>Berilio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleBoro">B<br>5<br>Boro</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#exampleCarbono">C<br>6<br>Carbono</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleNitrógeno">N<br>7<br>Nitrógeno</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#exampleOxígeno">O<br>8<br>Oxígeno</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleFlúor">F<br>9<br>Flúor</div>
+        <div class="elemento gases-nobles" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleNeón">Ne<br>10<br>Neón</div>
+
+        <!-- Tercera fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleSodio">Na<br>11<br>Sodio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleMagnesio">Mg<br>12<br>Magnesio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleAluminio">Al<br>13<br>Aluminio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#exampleSilicio">Si<br>14<br>Silicio</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleFósforo">P<br>15<br>Fósforo</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#exampleAzufre">S<br>16<br>Azufre</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleCloro">Cl<br>17<br>Cloro</div>
+        <div class="elemento gases-nobles" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleArgón">Ar<br>18<br>Argón</div>
+
+        <!-- Cuarta fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#examplePotasio">K<br>19<br>Potasio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleCalcio">Ca<br>20<br>Calcio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 3;" data-bs-toggle="modal" data-bs-target="#exampleEscandio">Sc<br>21<br>Escandio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 4;" data-bs-toggle="modal" data-bs-target="#exampleTitanio">Ti<br>22<br>Titanio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 5;" data-bs-toggle="modal" data-bs-target="#exampleVanadio">V<br>23<br>Vanadio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 6;" data-bs-toggle="modal" data-bs-target="#exampleCromo">Cr<br>24<br>Cromo</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 7;" data-bs-toggle="modal" data-bs-target="#exampleManganeso">Mn<br>25<br>Manganeso</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 8;" data-bs-toggle="modal" data-bs-target="#exampleHierro">Fe<br>26<br>Hierro</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 9;" data-bs-toggle="modal" data-bs-target="#exampleCobalto">Co<br>27<br>Cobalto</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 10;" data-bs-toggle="modal" data-bs-target="#exampleNíquel">Ni<br>28<br>Níquel</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 11;" data-bs-toggle="modal" data-bs-target="#exampleCobre">Cu<br>29<br>Cobre</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 12;" data-bs-toggle="modal" data-bs-target="#exampleZinc">Zn<br>30<br>Zinc</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleGalio">Ga<br>31<br>Galio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#exampleGermanio">Ge<br>32<br>Germanio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleArsénico">As<br>33<br>Arsénico</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#exampleSelenio">Se<br>34<br>Selenio</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleBromo">Br<br>35<br>Bromo</div>
+        <div class="elemento gases-nobles" id="sonido-div"  style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleKriptón">Kr<br>36<br>Kriptón</div>
+
+        <!-- Quinta fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleRubidio">Rb<br>37<br>Rubidio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleEstroncio">Sr<br>38<br>Estroncio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 3;" data-bs-toggle="modal" data-bs-target="#exampleYtrio">Y<br>39<br>Ytrio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 4;" data-bs-toggle="modal" data-bs-target="#exampleCirconio">Zr<br>40<br>Circonio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 5;" data-bs-toggle="modal" data-bs-target="#exampleNiobio">Nb<br>41<br>Niobio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 6;" data-bs-toggle="modal" data-bs-target="#exampleMolibdeno">Mo<br>42<br>Molibdeno</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 7;" data-bs-toggle="modal" data-bs-target="#exampleTecnecio">Tc<br>43<br>Tecnecio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 8;" data-bs-toggle="modal" data-bs-target="#exampleRutenio">Ru<br>44<br>Rutenio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 9;" data-bs-toggle="modal" data-bs-target="#exampleRodio">Rh<br>45<br>Rodio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 10;" data-bs-toggle="modal" data-bs-target="#examplePaladio">Pd<br>46<br>Paladio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 11;" data-bs-toggle="modal" data-bs-target="#examplePlata">Ag<br>47<br>Plata</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 12;" data-bs-toggle="modal" data-bs-target="#exampleCadmio">Cd<br>48<br>Cadmio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleIndio">In<br>49<br>Indio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#exampleEstaño">Sn<br>50<br>Estaño</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleAntimonio">Sb<br>51<br>Antimonio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#exampleTelurio">Te<br>52<br>Telurio</div>
+        <div class="elemento no-metales-reactivos" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleYodo">I<br>53<br>Yodo</div>
+        <div class="elemento gases-nobles" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleXenón">Xe<br>54<br>Xenón</div>
+
+        <!-- Sexta fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleCesio">Cs<br>55<br>Cesio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleBario">Ba<br>56<br>Bario</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 3; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleLantano">La<br>57<br>Lantano</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 4;" data-bs-toggle="modal" data-bs-target="#exampleHafnio">Hf<br>72<br>Hafnio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 5;" data-bs-toggle="modal" data-bs-target="#exampleTántalo">Ta<br>73<br>Tántalo</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 6;" data-bs-toggle="modal" data-bs-target="#exampleWolframio">W<br>74<br>Wolframio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 7;" data-bs-toggle="modal" data-bs-target="#exampleRenio">Re<br>75<br>Renio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 8;" data-bs-toggle="modal" data-bs-target="#exampleOsmio">Os<br>76<br>Osmio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 9;" data-bs-toggle="modal" data-bs-target="#exampleIridio">Ir<br>77<br>Iridio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 10;" data-bs-toggle="modal" data-bs-target="#examplePlatino">Pt<br>78<br>Platino</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 11;" data-bs-toggle="modal" data-bs-target="#exampleOro">Au<br>79<br>Oro</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 12;" data-bs-toggle="modal" data-bs-target="#exampleMercurio">Hg<br>80<br>Mercurio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleTalio">Tl<br>81<br>Talio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#examplePlomo">Pb<br>82<br>Plomo</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleBismuto">Bi<br>83<br>Bismuto</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#examplePolonio">Po<br>84<br>Polonio</div>
+        <div class="elemento metaloides" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleAstato">At<br>85<br>Astato</div>
+        <div class="elemento gases-nobles" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleRadón">Rn<br>86<br>Radón</div>
+
+        <!-- Séptima fila -->
+        <div class="elemento metales-alcalinos" id="sonido-div" style="grid-column: 1;" data-bs-toggle="modal" data-bs-target="#exampleFrancio">Fr<br>87<br>Francio</div>
+        <div class="elemento metales-alcalinoterreos" id="sonido-div" style="grid-column: 2;" data-bs-toggle="modal" data-bs-target="#exampleRadio">Ra<br>88<br>Radio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 3; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleActinio">Ac<br>89<br>Actinio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 4;" data-bs-toggle="modal" data-bs-target="#exampleRutherfordio">Rf<br>104<br>Rutherfordio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 5;" data-bs-toggle="modal" data-bs-target="#exampleDubnio">Db<br>105<br>Dubnio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 6;" data-bs-toggle="modal" data-bs-target="#exampleSeaborgio">Sg<br>106<br>Seaborgio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 7;" data-bs-toggle="modal" data-bs-target="#exampleBohrio">Bh<br>107<br>Bohrio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 8;" data-bs-toggle="modal" data-bs-target="#exampleHassio">Hs<br>108<br>Hassio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 9;" data-bs-toggle="modal" data-bs-target="#exampleMeitnerio">Mt<br>109<br>Meitnerio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 10;" data-bs-toggle="modal" data-bs-target="#exampleDarmstadtio">Ds<br>110<br>Darmstadtio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 11;" data-bs-toggle="modal" data-bs-target="#exampleRoentgenio">Rg<br>111<br>Roentgenio</div>
+        <div class="elemento metales-transicionales" id="sonido-div" style="grid-column: 12;" data-bs-toggle="modal" data-bs-target="#exampleCopernicio">Cn<br>112<br>Copernicio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 13;" data-bs-toggle="modal" data-bs-target="#exampleNihonio">Nh<br>113<br>Nihonio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 14;" data-bs-toggle="modal" data-bs-target="#exampleFlerovio">Fl<br>114<br>Flerovio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 15;" data-bs-toggle="modal" data-bs-target="#exampleMoscovio">Mc<br>115<br>Moscovio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 16;" data-bs-toggle="modal" data-bs-target="#exampleLivermorio">Lv<br>116<br>Livermorio</div>
+        <div class="elemento metales-postransicionales" id="sonido-div" style="grid-column: 17;" data-bs-toggle="modal" data-bs-target="#exampleTenesino">Ts<br>117<br>Tenesino</div>
+        <div class="elemento propiedades-desconocidas" id="sonido-div" style="grid-column: 18;" data-bs-toggle="modal" data-bs-target="#exampleOganesón">Og<br>118<br>Oganesón</div>
+
+        <!-- Lantánidos -->
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 4; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleCerio">Ce<br>58<br>Cerio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 5; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#examplePraseodimio">Pr<br>59<br>Praseodimio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 6; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleNeodimio">Nd<br>60<br>Neodimio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 7; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#examplePrometio">Pm<br>61<br>Prometio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 8; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleSamario">Sm<br>62<br>Samario</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 9; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleEuropio">Eu<br>63<br>Europio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 10; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleGadolinio">Gd<br>64<br>Gadolinio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 11; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleTerbio">Tb<br>65<br>Terbio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 12; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleDisprosio">Dy<br>66<br>Disprosio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 13; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleHolmio">Ho<br>67<br>Holmio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 14; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleErbio">Er<br>68<br>Erbio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 15; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleTulio">Tm<br>69<br>Tulio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 16; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleIterbio">Yb<br>70<br>Iterbio</div>
+        <div class="elemento lantánidos" id="sonido-div" style="grid-column: 17; grid-row: 8;" data-bs-toggle="modal" data-bs-target="#exampleLutecio">Lu<br>71<br>Lutecio</div>
+
+        <!-- Actínidos -->
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 4; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleTorio">Th<br>90<br>Torio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 5; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleProtactinio">Pa<br>91<br>Protactinio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 6; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleUranio">U<br>92<br>Uranio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 7; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleNeptunio">Np<br>93<br>Neptunio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 8; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#examplePlutonio">Pu<br>94<br>Plutonio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 9; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleAmericio">Am<br>95<br>Americio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 10; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleCurio">Cm<br>96<br>Curio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 11; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleBerkelio">Bk<br>97<br>Berkelio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 12; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleCalifornio">Cf<br>98<br>Californio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 13; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleEinstenio">Es<br>99<br>Einstenio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 14; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleFermio">Fm<br>100<br>Fermio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 15; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleMendelevio">Md<br>101<br>Mendelevio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 16; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleNobelio">No<br>102<br>Nobelio</div>
+        <div class="elemento actínidos" id="sonido-div" style="grid-column: 17; grid-row: 9;" data-bs-toggle="modal" data-bs-target="#exampleLawrencio">Lr<br>103<br>Lawrencio</div>
+    </div>
+
+    <div class="leyenda">
+        <div class="leyenda-item metales-alcalinos">Metales alcalinos</div>
+        <div class="leyenda-item metales-alcalinoterreos">Metales alcalinotérreos</div>
+        <div class="leyenda-item metaloides">Metaloides</div>
+        <div class="leyenda-item no-metales-reactivos">No metales reactivos</div>
+        <div class="leyenda-item actínidos">Actínidos</div>
+        <div class="leyenda-item propiedades-desconocidas">Propiedades desconocidas</div>
+        <div class="leyenda-item gases-nobles">Gases nobles</div>
+        <div class="leyenda-item metales-transicionales">Metales transicionales</div>
+        <div class="leyenda-item metales-postransicionales">Metales postransicionales</div>
+        <div class="leyenda-item lantánidos">Lantánidos</div>
+    </div>
+
+    <audio id="hover-sound">
+      <source src="./Audio/Boton.mp3" type="audio/mpeg">
+  </audio>
+  <script src="./js/script.js"></script>
+
+    <!-- Modal Hidrogeno-->
+<div class="modal fade" id="exampleHidrogeno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">HIDROGENO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                Símbolo y Número Atómico: El hidrógeno se representa con el símbolo "H" y tiene un número atómico de 1, lo que significa que tiene un protón en su núcleo.
+
+                Abundancia: Aunque es el elemento más abundante en el universo, en la Tierra se encuentra principalmente en forma de compuestos, como el agua (H2O) y los hidrocarburos.
+
+                Estado Físico: A temperatura y presión estándar, el hidrógeno es un gas incoloro, inodoro e insípido. Es el elemento más ligero y menos denso.
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Modal Helio-->
+<div class="modal fade" id="exampleHelio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HELIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Símbolo y Número Atómico: El helio se representa con el símbolo "He" y tiene un número atómico de 2, lo que significa que tiene dos protones en su núcleo.
+            Abundancia: Aunque es uno de los elementos más abundantes en el universo, en la Tierra es relativamente escaso en la atmósfera terrestre, constituyendo aproximadamente el 0.0005% en volumen. Es más comúnmente encontrado en yacimientos naturales de gas natural.
+            Estado Físico: A temperatura y presión estándar, el helio es un gas incoloro, inodoro e insípido. Es el segundo elemento más ligero después del hidrógeno.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Litio-->
+<div class="modal fade" id="exampleLitio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LITIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Reactividad Química: El litio es altamente reactivo, aunque no tan reactivo como el sodio o el potasio. Se oxida rápidamente en presencia de aire y reacciona vigorosamente con agua para producir hidróxido de litio y gas hidrógeno.
+        Ligereza: Es el metal más ligero y el menos denso entre los metales sólidos. Esta característica lo hace útil en aplicaciones donde se necesita una alta relación resistencia-peso, como en baterías de iones de litio utilizadas en dispositivos electrónicos portátiles.
+        Aplicaciones: El litio tiene una amplia gama de aplicaciones. Uno de sus usos más comunes es en las baterías recargables de iones de litio, que se utilizan en teléfonos móviles, computadoras portátiles, vehículos eléctricos y dispositivos médicos, entre otros. Además, se utiliza en la producción de aleaciones metálicas, lubricantes, cerámicas y productos farmacéuticos. También se usa en psicofármacos como estabilizador del estado de ánimo en el tratamiento del trastorno bipolar.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Berilio-->
+<div class="modal fade" id="exampleBerilio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BERILIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ligereza y Resistencia: El berilio es un metal ligero pero extremadamente duro y resistente. Tiene una alta relación resistencia-peso, lo que lo hace útil en aplicaciones donde se requiere rigidez y durabilidad, como en la industria aeroespacial y de defensa.
+        Toxicidad: A pesar de sus propiedades útiles, el berilio es altamente tóxico cuando se inhala en forma de polvo o vapores. La exposición crónica al berilio puede causar enfermedades pulmonares graves, como la enfermedad pulmonar obstructiva crónica (EPOC) y la enfermedad pulmonar por berilio (EPB), que pueden ser potencialmente mortales.
+        Conductividad Térmica y Eléctrica: El berilio tiene una alta conductividad térmica y eléctrica, lo que lo hace útil en aplicaciones donde se requiere disipación de calor, como en dispositivos electrónicos de alta potencia y en equipos de rayos X. También se utiliza en la fabricación de resortes y componentes mecánicos de precisión debido a su rigidez y resistencia a la fatiga.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Boro-->
+<div class="modal fade" id="exampleBoro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BORO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Semiconductor y Propiedades Electrónicas: El boro es un semiconductor, lo que significa que tiene una conductividad eléctrica intermedia entre un conductor y un aislante. Esta propiedad lo hace útil en la fabricación de dispositivos electrónicos, como diodos emisores de luz (LED), células solares y semiconductores para la industria de la electrónica.
+
+        Estructura Cristalina: El boro tiene una estructura cristalina compleja, lo que le confiere una notable dureza y resistencia. En su forma cristalina, como el boruro de titanio, el boro es uno de los materiales más duros conocidos, solo superado por el diamante.
+        
+        Aplicaciones en la Industria y la Agricultura: El boro se utiliza en una variedad de aplicaciones industriales y agrícolas. En la industria, se utiliza en la fabricación de vidrio resistente al calor, cerámicas, fibras de vidrio y productos químicos. En la agricultura, el boro se utiliza como micronutriente esencial para el crecimiento de las plantas. Se agrega a fertilizantes y se aplica al suelo para corregir deficiencias de boro en los cultivos, lo que mejora la calidad y el rendimiento de las plantas.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Carbono-->
+<div class="modal fade" id="exampleCarbono" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CARBONO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Versatilidad de Enlace: El carbono es único en su capacidad para formar una amplia variedad de compuestos debido a su habilidad para formar enlaces covalentes con otros átomos de carbono y con átomos de otros elementos. Esta capacidad de formar enlaces sencillos, dobles y triples permite la creación de una vasta diversidad de moléculas, incluyendo hidrocarburos, compuestos orgánicos y biomoléculas como proteínas, carbohidratos, lípidos y ácidos nucleicos.
+
+        Alotropos: El carbono tiene varios alotropos, lo que significa que puede existir en diferentes formas cristalinas o estructuras molecular. Algunos de los alotropos más conocidos del carbono incluyen el diamante, el grafito y el carbono amorfo. Cada alotropo tiene propiedades físicas y químicas únicas, lo que los hace adecuados para diferentes aplicaciones. Por ejemplo, el diamante es extremadamente duro y transparente, mientras que el grafito es un buen conductor de electricidad y es utilizado en lápices.
+        
+        Importancia Biológica: El carbono es el elemento base de todas las moléculas orgánicas, lo que significa que es esencial para la vida tal como la conocemos. Forma el esqueleto estructural de los compuestos orgánicos y participa en prácticamente todos los procesos biológicos. Los organismos vivos, incluyendo plantas, animales y microorganismos, dependen del carbono para la síntesis de proteínas, ácidos nucleicos, carbohidratos y lípidos, así como para la transferencia de energía en forma de adenosín trifosfato (ATP).      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Nitrógeno-->
+<div class="modal fade" id="exampleNitrógeno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NITROGENO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Abundancia y Atmosfera: El nitrógeno es el gas más abundante en la atmósfera terrestre, representando aproximadamente el 78% de la composición del aire. Aunque es tan común, el nitrógeno molecular (N2) es relativamente inerte y no reactivo en condiciones normales, lo que significa que no reacciona fácilmente con otros elementos.
+
+        Importancia Biológica: Aunque el nitrógeno molecular en la atmósfera no está disponible directamente para la mayoría de los organismos, el nitrógeno es un elemento esencial para la vida. Es un componente fundamental de las proteínas, ácidos nucleicos y otros compuestos biológicos. Los organismos obtienen nitrógeno en formas utilizables a través de procesos como la fijación de nitrógeno por parte de ciertas bacterias, la absorción de nitratos y amonio del suelo por las plantas, y la ingesta de proteínas por parte de los animales.
+        
+        Aplicaciones Industriales: El nitrógeno tiene numerosas aplicaciones industriales. Se utiliza en la producción de amoníaco, que es un precursor para la fabricación de fertilizantes y productos químicos nitrogenados. También se utiliza en la industria alimentaria y de bebidas para envasar productos perecederos y en la industria electrónica para crear atmósferas inertes que eviten la oxidación de componentes sensibles. Además, el nitrógeno líquido se utiliza en la criogenia para enfriar materiales a temperaturas extremadamente bajas.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Oxígeno-->
+<div class="modal fade" id="exampleOxígeno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">OXIGENO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Abundancia y Respiración: El oxígeno es uno de los elementos más abundantes en la Tierra y es vital para la respiración de la mayoría de los organismos aeróbicos. Representa aproximadamente el 21% de la atmósfera terrestre y es esencial para la respiración celular, donde actúa como aceptor final de electrones en la cadena de transporte de electrones, permitiendo la producción de energía en forma de adenosín trifosfato (ATP).
+        Reactividad Química: El oxígeno es altamente reactivo y forma compuestos con una amplia variedad de elementos.       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Flúor-->
+<div class="modal fade" id="exampleFlúor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">FLUOR</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Altamente Reactivo: El flúor es el elemento más reactivo y electronegativo de todos los elementos químicos. Tiene una alta afinidad por los electrones y puede formar enlaces con casi todos los otros elementos en la tabla periódica. Debido a su alta reactividad, el flúor se encuentra principalmente en forma de compuestos, especialmente como el fluoruro en minerales como la fluorita y la fluorapatita.
+        Propiedades como Halógeno: El flúor pertenece al grupo de los halógenos en la tabla periódica, que también incluye al cloro, bromo, yodo y astato. Como tal, comparte muchas características con los otros halógenos, como la capacidad para formar compuestos iónicos y covalentes con metales y no metales, y su capacidad para reaccionar con los metales alcalinos y alcalinotérreos para formar haluros.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Neón-->
+<div class="modal fade" id="exampleNeón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NEON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica del neón es su naturaleza inerte y no reactiva. El neón es un gas noble que se encuentra en la atmósfera en pequeñas cantidades. Es conocido por su brillo característico en lámparas de neón y letreros luminosos debido a su capacidad para emitir luz cuando se excita eléctricamente.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Sodio-->
+<div class="modal fade" id="exampleSodio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SODIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica del sodio es su alta reactividad química. El sodio es un metal alcalino que reacciona violentamente con el agua, produciendo hidrógeno gaseoso y liberando calor en el proceso. Además, tiene una tendencia a perder su único electrón de valencia con facilidad, lo que lo hace altamente reactivo con otros elementos, especialmente con halógenos como el cloro y el flúor.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Magnesio-->
+<div class="modal fade" id="exampleMagnesio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MAGNESIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del magnesio es su baja densidad en comparación con otros metales. A pesar de ser un metal, el magnesio tiene una densidad relativamente baja, lo que lo convierte en uno de los metales estructurales más ligeros disponibles comercialmente. Esta baja densidad lo hace útil en aplicaciones donde se requiere resistencia estructural pero se busca reducir el peso, como en la fabricación de componentes de aviación, automotrices y deportivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Aluminio-->
+<div class="modal fade" id="exampleAluminio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ALUMINIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del aluminio es su excelente relación resistencia-peso. Aunque es un metal ligero, el aluminio tiene una resistencia mecánica notable, lo que lo convierte en un material muy utilizado en aplicaciones donde se requiere rigidez y resistencia, pero se busca mantener el peso bajo. Esto lo hace ideal para su uso en la fabricación de estructuras de aviones, automóviles, bicicletas, embarcaciones y otros productos donde la relación peso-resistencia es crítica.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Silicio-->
+<div class="modal fade" id="exampleSilicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SILICIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del silicio es su importancia en la industria de la electrónica como semiconductor. El silicio es el segundo elemento más abundante en la corteza terrestre y es fundamental en la fabricación de dispositivos electrónicos, como transistores, circuitos integrados y células solares. Su capacidad para conductividad eléctrica puede ser modificada mediante la introducción de impurezas, un proceso conocido como dopaje, lo que le permite ser utilizado en una amplia gama de aplicaciones electrónicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Fósforo-->
+<div class="modal fade" id="exampleFósforo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">FOSFORO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del fósforo es su importancia en la biología como componente fundamental de moléculas como el ATP (adenosín trifosfato) y los ácidos nucleicos, como el ADN y el ARN. Estas moléculas son vitales para el almacenamiento y transferencia de energía en las células, así como para la transmisión y expresión de información genética. Además, el fósforo es un componente importante de los huesos y los dientes, proporcionando rigidez y estructura a estas partes del cuerpo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Azufre-->
+<div class="modal fade" id="exampleAzufre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">AZUFRE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del azufre es su capacidad para formar una variedad de compuestos químicos. El azufre es un elemento altamente reactivo que puede formar enlaces covalentes con muchos otros elementos, lo que le permite participar en la formación de una amplia gama de compuestos orgánicos e inorgánicos. Estos compuestos incluyen sulfuros, sulfatos, sulfitos, sulfuros orgánicos, y muchos más. Debido a esta versatilidad, el azufre tiene numerosas aplicaciones industriales, desde la fabricación de productos químicos y fertilizantes hasta la vulcanización del caucho y la producción de ácido sulfúrico. Además, el azufre es un elemento esencial para la vida, ya que forma parte de los aminoácidos y proteínas, y es necesario para muchos procesos biológicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Cloro-->
+<div class="modal fade" id="exampleCloro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CLORO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del cloro es su alta capacidad oxidante. El cloro es un elemento altamente reactivo que tiene una fuerte afinidad por los electrones. Esta propiedad le permite reaccionar con una amplia gama de elementos y compuestos, oxidándolos en el proceso. Debido a su capacidad oxidante, el cloro se utiliza comúnmente como desinfectante en el tratamiento de agua potable y piscinas, así como en la industria química para la producción de productos químicos como el PVC (policloruro de vinilo), los plaguicidas y los productos de blanqueo. Sin embargo, el cloro también puede ser tóxico en altas concentraciones y debe manejarse con precaución.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Argón-->
+<div class="modal fade" id="exampleArgón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ARGON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del argón es su naturaleza inerte. El argón es un gas noble que se encuentra en la atmósfera en pequeñas cantidades. A diferencia de otros elementos más reactivos, el argón es extremadamente estable y no forma compuestos químicos significativos con otros elementos. Debido a esta inercia química, el argón se utiliza en una variedad de aplicaciones donde se requiere un ambiente no reactivo, como en la soldadura de metales para proteger el material de soldadura de la oxidación, en la fabricación de lámparas de gas para proporcionar un ambiente inerte, y en la conservación de muestras sensibles al oxígeno en la investigación científica.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Potasio-->
+<div class="modal fade" id="examplePotasio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">POTASIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del potasio es su importancia en los organismos vivos como un electrolito. El potasio es un metal alcalino que desempeña un papel crucial en la regulación de la actividad celular y la función neuromuscular en los seres vivos. En las células, el potasio juega un papel vital en el mantenimiento del equilibrio osmótico y en la transmisión de señales eléctricas a lo largo de las membranas celulares. Además, el potasio es necesario para la contracción muscular, la función cardíaca y el equilibrio hídrico en el cuerpo humano. Una ingesta adecuada de potasio a través de la dieta es esencial para la salud humana, y los alimentos ricos en potasio incluyen frutas, verduras, legumbres y productos lácteos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Calcio-->
+<div class="modal fade" id="exampleCalcio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CALCIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del calcio es su importancia en la formación y mantenimiento de huesos y dientes. El calcio es uno de los minerales más abundantes en el cuerpo humano y es esencial para la salud ósea. En los huesos y dientes, el calcio proporciona rigidez y estructura, lo que los hace fuertes y resistentes. Además de su papel estructural, el calcio también desempeña funciones vitales en la contracción muscular, la transmisión de impulsos nerviosos, la coagulación sanguínea y la función celular. Una ingesta adecuada de calcio a través de la dieta es fundamental para mantener la salud ósea y prevenir enfermedades como la osteoporosis. Los alimentos ricos en calcio incluyen productos lácteos, verduras de hoja verde, frutos secos y pescados como el salmón y la sardina.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal Escandio-->
+<div class="modal fade" id="exampleEscandio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ESCANDIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del escandio es su rareza y su uso en aplicaciones especializadas.
+        El escandio es un metal de transición ligero que se encuentra en la corteza terrestre en 
+        concentraciones muy bajas, lo que lo hace relativamente raro. A pesar de su rareza, el escandio
+         tiene propiedades interesantes que lo hacen útil en aplicaciones específicas. Por ejemplo, se 
+         utiliza en aleaciones de aluminio para mejorar la resistencia y la durabilidad de materiales 
+         utilizados en aplicaciones aeroespaciales y deportivas, como marcos de bicicletas y equipos de golf.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Titanio-->
+<div class="modal fade" id="exampleTitanio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TITANIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del titanio es su resistencia y ligereza. El titanio es un metal de transición conocido por su alta resistencia mecánica, incluso a temperaturas elevadas, y su baja densidad. Esta combinación de propiedades lo convierte en un material muy deseable para una variedad de aplicaciones en las que se requiere una resistencia estructural sin agregar peso adicional. El titanio se utiliza en una amplia gama de industrias, incluyendo la aeroespacial, la automotriz, la médica y la deportiva. En la industria aeroespacial, por ejemplo, se utiliza en la fabricación de componentes de aviones y satélites debido a su capacidad.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Vanadio-->
+<div class="modal fade" id="exampleVanadio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">VANADIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del vanadio es su resistencia y su capacidad para formar aleaciones fuertes y duraderas. El vanadio es un metal de transición que se utiliza principalmente como aditivo en la fabricación de aceros especiales. Cuando se agrega al acero en pequeñas cantidades, el vanadio aumenta significativamente su resistencia, dureza, resistencia a la corrosión y resistencia al desgaste
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cromo-->
+<div class="modal fade" id="exampleCromo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CROMO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del cromo es su resistencia a la corrosión. El cromo es un metal de transición que tiene la capacidad de formar una capa de óxido pasivante en su superficie cuando se expone al oxígeno. Esta capa de óxido de cromo es extremadamente delgada pero altamente resistente a la corrosión, protegiendo al metal subyacente de la oxidación y la corrosión.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Manganeso-->
+<div class="modal fade" id="exampleManganeso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MANGANESO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del manganeso es su versatilidad en la formación de aleaciones. El manganeso es un metal de transición que se utiliza ampliamente como elemento de aleación en la industria metalúrgica. Al agregar manganeso a otros metales, como el acero, se pueden mejorar diversas propiedades, como la resistencia mecánica, la dureza, la resistencia al desgaste y la resistencia a la corrosión. Además de su uso en la producción de acero, el manganeso se utiliza en la fabricación de otras aleaciones metálicas, como el aluminio, el cobre y el titanio. También se utiliza en la producción de pilas secundarias, fertilizantes, pigmentos, productos químicos y en la industria del vidrio para eliminar impurezas y mejorar la claridad.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Hierro-->
+<div class="modal fade" id="exampleHierro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HIERRO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Resistencia y Ductilidad: El hierro es conocido por su resistencia y ductilidad. Esto significa que puede soportar grandes fuerzas sin romperse y puede ser moldeado o estirado en diferentes formas sin fracturarse fácilmente.
+        Conductividad: El hierro es un buen conductor de electricidad y calor, lo que lo hace útil en aplicaciones eléctricas y térmicas, como cables eléctricos y tuberías de agua caliente.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cobalto-->
+<div class="modal fade" id="exampleCobalto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">COBALTO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del cobalto es su capacidad para formar aleaciones magnéticas. El cobalto es un metal de transición que, cuando se mezcla con otros elementos como el hierro y el níquel, forma aleaciones con propiedades magnéticas únicas. Estas aleaciones magnéticas son conocidas como "aleaciones de cobalto" o "aceros al cobalto" y son ampliamente utilizadas en aplicaciones donde se requiere un alto rendimiento magnético. Por ejemplo, se utilizan en la fabricación de imanes permanentes para aplicaciones industriales y electrónicas, como motores eléctricos, generadores, dispositivos de almacenamiento de datos y equipos médicos. Además, el cobalto puro y sus compuestos se utilizan en la industria química, en la fabricación de cerámicas, pigmentos, catalizadores y baterías recargables de iones de litio.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Níquel-->
+<div class="modal fade" id="exampleNíquel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NIQUEL</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Resistencia a la Corrosión: El níquel es altamente resistente a la corrosión en ambientes corrosivos, incluyendo la humedad, los ácidos y los álcalis. Esta resistencia a la corrosión lo hace ideal para su uso en la fabricación de componentes expuestos a condiciones adversas, como tuberías, intercambiadores de calor, y equipos químicos.
+        Formación de Aleaciones: El níquel tiene la capacidad de formar aleaciones con una amplia variedad de elementos, lo que resulta en propiedades mejoradas en comparación con el níquel puro. Por ejemplo, el níquel se utiliza comúnmente en la fabricación de aleaciones de acero inoxidable, que son conocidas por su resistencia a la corrosión, su durabilidad y su brillo.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cobre-->
+<div class="modal fade" id="exampleCobre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">COBRE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del cobre es su excelente conductividad eléctrica y térmica. El cobre es uno de los mejores conductores de electricidad entre los metales comunes y se utiliza ampliamente en la fabricación de cables eléctricos, circuitos impresos, motores eléctricos y otros componentes electrónicos. Además, el cobre también es un buen conductor térmico, lo que lo hace útil en aplicaciones donde se requiere transferencia de calor eficiente, como en tuberías de agua caliente, intercambiadores de calor y componentes de refrigeración.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Zinc-->
+<div class="modal fade" id="exampleZinc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ZINC</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del zinc es su capacidad para proteger otros metales de la corrosión a través de un proceso conocido como protección catódica o galvanizado. El zinc es un metal de transición que tiene una alta actividad como agente reductor, lo que significa que tiene una fuerte tendencia a ceder electrones en reacciones electroquímicas. Cuando se utiliza como recubrimiento sobre otros metales, como el acero, el zinc actúa como un "sacrificio" anódico, lo que significa que se oxida en lugar del metal base.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Galio-->
+<div class="modal fade" id="exampleGalio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">GALIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Una característica clave del galio es su punto de fusión relativamente bajo en comparación con otros metales, lo que lo convierte en uno de los metales más suaves. El galio es un metal de transición que se funde a una temperatura cercana a los 30 °C (86 °F), lo que significa que puede fundirse simplemente con el calor de la mano humana. Esta propiedad única hace que el galio sea útil en diversas aplicaciones, como en la fabricación de termómetros de temperatura ambiente y en la industria de los semiconductores.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Germanio-->
+<div class="modal fade" id="exampleGermanio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">GERMANIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El germanio es un semiconductor de alta pureza utilizado en la fabricación de transistores y otros dispositivos electrónicos. Su capacidad para transmitir señales eléctricas con poca pérdida lo hace valioso en aplicaciones ópticas y electrónicas. Además, el germanio se utiliza en la producción de fibras ópticas y sistemas de visión infrarroja debido a su transparencia en el espectro infrarrojo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Arsénico-->
+<div class="modal fade" id="exampleArsénico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ARSENICO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El arsénico es un elemento químico metaloide conocido por su toxicidad y sus aplicaciones en la industria. Se utiliza en aleaciones con otros metales para mejorar su dureza y resistencia a la corrosión. Además, el arsénico se emplea en la fabricación de semiconductores y en tratamientos para conservar la madera, aunque su uso está restringido debido a sus efectos perjudiciales sobre la salud humana y el medio ambiente.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Selenio-->
+<div class="modal fade" id="exampleSelenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SELENIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El selenio es un elemento químico que se encuentra en trazas en el cuerpo humano y es esencial para el correcto funcionamiento de varios procesos biológicos. En la industria, el selenio se utiliza en la fabricación de vidrio, pigmentos y en la industria electrónica debido a sus propiedades semiconductoras. También se utiliza en productos de cuidado personal y como suplemento dietético por sus propiedades antioxidantes.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Bromo-->
+<div class="modal fade" id="exampleBromo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BROMO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El bromo es un elemento químico halógeno que se encuentra en forma de líquido a temperatura ambiente. Es conocido por su fuerte olor y su alta reactividad. El bromo se utiliza en la fabricación de retardantes de llama, productos farmacéuticos y en la desinfección del agua en piscinas. Debido a su toxicidad, su manejo requiere precauciones especiales para evitar efectos nocivos en la salud humana y el medio ambiente.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kriptón-->
+<div class="modal fade" id="exampleKriptón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">KRIPTON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El kriptón es un gas noble incoloro e inodoro que se encuentra en pequeñas cantidades en la atmósfera terrestre. Es utilizado principalmente en iluminación, como en lámparas fluorescentes y bombillas de flash fotográfico debido a su capacidad para producir luz brillante y blanca. Además, el kriptón se utiliza en algunos tipos de láseres y en la fabricación de ventanas de alta eficiencia energética debido a sus propiedades aislantes.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rubidio-->
+<div class="modal fade" id="exampleRubidio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RUBIDIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El rubidio es un elemento químico alcalino de color plateado que es altamente reactivo y se oxida rápidamente en el aire. Se utiliza en una variedad de aplicaciones, incluyendo la fabricación de células fotoeléctricas y en la investigación científica. El rubidio también tiene aplicaciones en relojes atómicos debido a su capacidad para medir el tiempo con gran precisión, lo que es crucial para sistemas de navegación y telecomunicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Estroncio-->
+<div class="modal fade" id="exampleEstroncio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ESTRONCIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El estroncio es un metal alcalinotérreo de color plateado que reacciona rápidamente con el aire y el agua. Se utiliza en la fabricación de imanes de ferrita y en la producción de fuegos artificiales para crear colores rojos brillantes. Además, el estroncio tiene aplicaciones en la industria médica, donde se utiliza en tratamientos para fortalecer los huesos y en la fabricación de materiales luminiscentes utilizados en pantallas y dispositivos electrónicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ytrio-->
+<div class="modal fade" id="exampleYtrio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">YTRIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El itrio es un metal de transición de color plateado que es comúnmente utilizado en la industria de alta tecnología. Se utiliza en la fabricación de LEDs y láseres, así como en superconductores y cerámicas avanzadas. Además, el itrio es un componente crucial en los fósforos utilizados en pantallas de televisores y monitores. Su capacidad para mejorar las propiedades de otros materiales lo hace valioso en diversas aplicaciones industriales y electrónicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Circonio-->
+<div class="modal fade" id="exampleCirconio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CIRCONIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El Circonio es un metal de transición de color blanco plateado que se utiliza en una variedad de aplicaciones industriales y tecnológicas. Es conocido por su alta resistencia a la corrosión y su capacidad para resistir altas temperaturas. El zirconio se utiliza comúnmente en aleaciones para fabricar piezas de aviones, implantes médicos, y recipientes resistentes al calor en reactores nucleares. También se utiliza en la industria química y en la fabricación de cerámicas de alto rendimiento.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Niobio-->
+<div class="modal fade" id="exampleNiobio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NIOBIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El niobio es un metal de transición de color gris plateado que se utiliza principalmente en aleaciones para aumentar la resistencia y la durabilidad de otros materiales. Es conocido por su resistencia a la corrosión y a altas temperaturas. El niobio se utiliza en la fabricación de aceros especiales para la industria aeroespacial, en la producción de superaleaciones para turbinas de aviones y en la fabricación de equipos químicos y nucleares. También tiene aplicaciones en la industria electrónica y en la fabricación de joyería.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Molibdeno-->
+<div class="modal fade" id="exampleMolibdeno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MOLIBDENO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El molibdeno es un metal de transición de color gris plateado que se utiliza en una amplia gama de aplicaciones industriales. Es conocido por su alta resistencia a la corrosión y altas temperaturas. El molibdeno se utiliza en aleaciones para fabricar piezas de aviones, equipos de perforación petrolífera, herramientas de corte, y componentes de motores de automóviles. También tiene aplicaciones en la fabricación de aceros inoxidables y en la industria química como catalizador en procesos de refinación de petróleo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Tecnecio-->
+<div class="modal fade" id="exampleTecnecio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TECNECIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El tecnecio es un elemento químico metálico que se utiliza principalmente en aplicaciones médicas y en la industria nuclear. Es un emisor de radiación beta, lo que lo hace útil en la medicina nuclear para la obtención de imágenes y el tratamiento de ciertas enfermedades. Además, el tecnecio se utiliza en la investigación científica y en la fabricación de dispositivos electrónicos. Debido a su radioactividad, su manejo y almacenamiento requieren precauciones especiales.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rutenio-->
+<div class="modal fade" id="exampleRutenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RUTENIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El rutenio es un metal de transición que se utiliza principalmente como catalizador en diversas reacciones químicas. Es conocido por su alta resistencia a la corrosión y su capacidad para soportar altas temperaturas. El rutenio se utiliza en la fabricación de electrodos para células de combustible, en la industria química para la producción de amoníaco, y en la industria de la joyería para aumentar la dureza y la resistencia al desgaste de aleaciones de platino. También tiene aplicaciones en la medicina como agente de contraste en resonancia magnética.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rodio-->
+<div class="modal fade" id="exampleRodio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RODIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El rodio es un metal de transición de color blanco plateado que es conocido por su alta resistencia a la corrosión y su brillo característico. Se utiliza principalmente como catalizador en la industria química y automotriz, especialmente en la fabricación de convertidores catalíticos para vehículos de motor. Además, el rodio se utiliza en la fabricación de joyería y en la industria electrónica en contactos eléctricos y como recubrimiento para superficies reflectantes en espejos y ópticas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Paladio-->
+<div class="modal fade" id="examplePaladio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PALADIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El paladio es un metal de transición de color plateado blanco que se utiliza principalmente en la industria automotriz y joyería debido a su resistencia a la corrosión y su brillo característico. Es un componente clave en la fabricación de convertidores catalíticos para vehículos de motor, donde ayuda a reducir las emisiones de gases nocivos. Además, el paladio se utiliza en la fabricación de contactos eléctricos, relojes y en la industria química.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plata-->
+<div class="modal fade" id="examplePlata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLATA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La plata es un metal precioso de color blanco brillante que se utiliza en una amplia gama de aplicaciones, desde la fabricación de joyería y utensilios hasta la industria electrónica y fotográfica. Es conocida por su alta conductividad eléctrica y térmica, así como por su resistencia a la corrosión. La plata se utiliza en monedas, cubiertos, circuitos eléctricos, espejos, y en la industria médica en dispositivos y vendajes antibacterianos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cadmio-->
+<div class="modal fade" id="exampleCadmio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CADMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El cadmio es un metal blando y plateado que se utiliza en una variedad de aplicaciones industriales. Es conocido por su baja conductividad eléctrica y su resistencia a la corrosión. El cadmio se utiliza principalmente en baterías recargables de níquel-cadmio, recubrimientos protectores contra la corrosión, pigmentos en la industria del plástico y como estabilizador en aleaciones de metales. Sin embargo, debido a su toxicidad, su uso está siendo restringido en varios productos y aplicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Indio-->
+<div class="modal fade" id="exampleIndio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">INDIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El indio es un metal de color plateado que se utiliza en una variedad de aplicaciones, especialmente en la industria electrónica. Es conocido por su alta conductividad eléctrica y su baja resistencia a la corrosión. El indio se utiliza en la fabricación de semiconductores, paneles solares, pantallas táctiles, y en la soldadura de alta calidad. También se utiliza en aleaciones con otros metales para mejorar sus propiedades mecánicas y en la fabricación de espejos y recubrimientos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Estaño-->
+<div class="modal fade" id="exampleEstaño" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ESTAÑO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El estaño es un metal de color plateado brillante que se utiliza en una variedad de aplicaciones industriales y domésticas. Es conocido por su bajo punto de fusión y su resistencia a la corrosión. El estaño se utiliza principalmente en la fabricación de aleaciones metálicas, como el bronce y el latón, así como en la producción de hojalata para envases de alimentos y bebidas. También se utiliza en soldaduras, revestimientos protectores y en la fabricación de dispositivos electrónicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Antimonio-->
+<div class="modal fade" id="exampleAntimonio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ANTIMONIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El antimonio es un metaloide de color plateado brillante que se encuentra en forma de sulfuro de antimonio (estibina) y en varias formas naturales. Se utiliza principalmente en la producción de aleaciones metálicas, retardantes de llama, y productos cerámicos. Además, el antimonio tiene aplicaciones en la fabricación de baterías, plásticos, vidrios y pigmentos para pinturas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Telurio-->
+<div class="modal fade" id="exampleTelurio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TELURIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El telurio es un metaloide de color plateado que se utiliza principalmente en la producción de aleaciones con metales como el plomo y el cobre, y en la fabricación de semiconductores. También tiene aplicaciones en la industria de la cerámica, la fabricación de vidrios, y en la industria de la energía solar, donde se utiliza en la fabricación de celdas solares fotovoltaicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Yodo-->
+<div class="modal fade" id="exampleYodo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">YODO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El yodo es un elemento químico de color negro azulado que se utiliza principalmente en la producción de compuestos yodados, como el yoduro de potasio, que se utiliza en medicina, fotografía y como aditivo en sal de mesa. Además, el yodo tiene aplicaciones en la industria química, la fabricación de productos químicos y farmacéuticos, y en la industria del caucho y plástico.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Xenón-->
+<div class="modal fade" id="exampleXenón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">XENON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El xenón es un gas noble incoloro que se utiliza en lámparas de luz estroboscópica, lámparas de arco corto, láseres de gas, lámparas de destellos y lámparas de flash fotográfico. También tiene aplicaciones en la
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cesio-->
+<div class="modal fade" id="exampleCesio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CESIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El cesio es un metal alcalino de color dorado que es altamente reactivo y se encuentra en pequeñas cantidades en la corteza terrestre. Es conocido por su baja fusión y ebullición, y por su capacidad para reaccionar violentamente con el agua. El cesio se utiliza en la fabricación de relojes atómicos de alta precisión, en la industria petrolera como aditivo para la perforación de pozos y en la investigación científica en aplicaciones de espectroscopia.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Bario-->
+<div class="modal fade" id="exampleBario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BARIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El bario es un metal alcalinotérreo de color plateado que se encuentra en la naturaleza en forma de minerales. Es conocido por su alta densidad y su capacidad para reaccionar con agua y ácidos. El bario se utiliza en la industria petrolera en la perforación de pozos como aditivo para lodos de perforación. También se utiliza en la fabricación de vidrio, pinturas, fuegos artificiales y en aplicaciones médicas como medio de contraste en radiografías.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Lantano-->
+<div class="modal fade" id="exampleLantano" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LANTANO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El lantano es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Es utilizado en aleaciones para la fabricación de pilas de encendido de cigarros y de las cerillas de seguridad, en las lentes de ciertas gafas y para fabricar vidrio de precisión y cerámica, entre otras aplicaciones industriales.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Hafnio-->
+<div class="modal fade" id="exampleHafnio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HAFNIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El hafnio es un metal de transición de color gris plateado que es muy resistente a la corrosión y tiene una alta densidad. Es conocido por su uso en la industria nuclear, donde se utiliza como revestimiento de barras de control en reactores nucleares. El hafnio también se utiliza en la fabricación de superaleaciones de alta temperatura para motores de aviones y en la industria electrónica en la producción de componentes semiconductores.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Tántalo-->
+<div class="modal fade" id="exampleTántalo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TANTALO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El tantalio es un metal de transición de color gris azulado que es conocido por su alta densidad y resistencia a la corrosión. Es utilizado principalmente en la industria electrónica para la fabricación de condensadores de tantalio, que son componentes importantes en dispositivos electrónicos como teléfonos móviles, ordenadores y cámaras digitales. También se utiliza en aplicaciones médicas, aeroespaciales y en la fabricación de aleaciones de alta resistencia.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Wolframio-->
+<div class="modal fade" id="exampleWolframio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">WOLFRAMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El wolframio, también conocido como tungsteno, es un metal de transición de color gris plateado que tiene el punto de fusión más alto de todos los elementos metálicos. Se utiliza en una variedad de aplicaciones, incluyendo la fabricación de filamentos para bombillas incandescentes, electrodos para soldadura de arco, herramientas de corte de alta velocidad y componentes de reactores nucleares. También se utiliza en la industria aeroespacial y en la fabricación de aleaciones duras.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Renio-->
+<div class="modal fade" id="exampleRenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RENIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El renio es un metal de transición de color blanco plateado que se encuentra en pequeñas cantidades en la corteza terrestre. Es conocido por su alta densidad, punto de fusión y resistencia a la corrosión. Se utiliza principalmente en la industria aeroespacial y en la fabricación de superaleaciones de alta temperatura para motores de aviones. También se utiliza en la industria química como catalizador y en la industria electrónica en contactos eléctricos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Osmio-->
+<div class="modal fade" id="exampleOsmio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">OSMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El osmio es un metal de transición de color blanco plateado que es el elemento natural más denso conocido. Es conocido por su alta densidad y su extrema resistencia a la corrosión. El osmio se utiliza principalmente en aleaciones con otros metales para aumentar su dureza y resistencia al desgaste, especialmente en la fabricación de puntas de plumas y herramientas de corte. También se utiliza en la industria química como catalizador y en la fabricación de componentes eléctricos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Iridio-->
+<div class="modal fade" id="exampleIridio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">IRIDIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El iridio es un metal de transición de color blanco plateado que es conocido por ser uno de los elementos más densos y resistentes a la corrosión. Se utiliza principalmente en la fabricación de contactos eléctricos y en la industria química como catalizador. El iridio también se utiliza en la fabricación de joyería de alta calidad, especialmente en la fabricación de anillos de compromiso y relojes de lujo debido a su resistencia al deslustre y su color blanco brillante.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Platino-->
+<div class="modal fade" id="examplePlatino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLATINO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El platino es un metal de transición de color blanco plateado que es conocido por su belleza y durabilidad. Es uno de los metales preciosos más valiosos y se utiliza principalmente en la fabricación de joyería de alta calidad, especialmente en anillos de compromiso y alianzas matrimoniales. Además de su uso en joyería, el platino también se utiliza en la industria automotriz en catalizadores de vehículos, en la industria química como catalizador y en la industria electrónica en contactos eléctricos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Oro-->
+<div class="modal fade" id="exampleOro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ORO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El oro es un metal precioso de color amarillo brillante que ha sido valorado por su belleza y rareza a lo largo de la historia. Es conocido por su maleabilidad, ductilidad y resistencia a la corrosión. El oro se utiliza principalmente en la fabricación de joyería y monedas, pero también tiene aplicaciones en la electrónica, odontología, industria aeroespacial y medicina. Además, el oro se utiliza como reserva de valor y como activo financiero en inversiones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mercurio-->
+<div class="modal fade" id="exampleMercurio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MERCURIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El mercurio es un metal líquido de color plateado que es conocido por su alta toxicidad. Es el único metal que es líquido a temperatura ambiente y se utiliza en una variedad de aplicaciones, incluyendo la fabricación de termómetros, barómetros, lámparas fluorescentes y en la industria química como catalizador. Sin embargo, debido a su toxicidad, su uso está siendo restringido en varios productos y aplicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Talio-->
+<div class="modal fade" id="exampleTalio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TALIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El talio es un metal blando y maleable de color gris azulado que es altamente tóxico para los seres humanos. Se utiliza en la fabricación de semiconductores y en la producción de vidrio y cerámica. También se ha utilizado en la fabricación de venenos para ratas y en la medicina como tratamiento para algunas afecciones de la piel, aunque su uso ha disminuido debido a su toxicidad.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plomo-->
+<div class="modal fade" id="examplePlomo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLOMO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El plomo es un metal pesado de color gris azulado que es conocido por su toxicidad para los seres humanos. Se utiliza en una variedad de aplicaciones industriales, incluyendo la fabricación de baterías, soldaduras, tuberías, y en la industria química. A pesar de su toxicidad, el plomo ha sido ampliamente utilizado a lo largo de la historia debido a sus propiedades útiles, pero su uso está siendo restringido y regulado cada vez más debido a sus efectos adversos para la salud.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Bismuto-->
+<div class="modal fade" id="exampleBismuto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BISMUTO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El bismuto es un metal de color blanco plateado que es conocido por ser uno de los elementos menos tóxicos para los seres humanos. Se utiliza en la fabricación de aleaciones con bajo punto de fusión, como el metal de tipo Babbitt, y en la fabricación de pigmentos para cosméticos y productos farmacéuticos. El bismuto también se utiliza en la industria química como catalizador y en la medicina como tratamiento para algunas afecciones gastrointestinales.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Polonio-->
+<div class="modal fade" id="examplePolonio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">POLONIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El polonio es un metaloide extremadamente tóxico de color plateado que se utiliza principalmente en la industria nuclear y en la investigación científica. Es conocido por su alta radiactividad y se utiliza en la fabricación de fuentes de neutrones y dispositivos de medición de radiación. Debido a su toxicidad y radiactividad, el polonio tiene muy pocas aplicaciones comerciales y su uso está altamente regulado.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Astato-->
+<div class="modal fade" id="exampleAstato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ASTATO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El astato es un elemento químico extremadamente raro y radioactivo que pertenece al grupo de los halógenos. Debido a su corta vida media y su rareza, no tiene aplicaciones comerciales significativas. Sin embargo, se utiliza en investigación científica, especialmente en el estudio de la radioactividad y la física nuclear. El astato también ha sido estudiado por su potencial uso en medicina nuclear, pero su uso está limitado debido a su radiactividad y a la dificultad para obtener cantidades significativas de este elemento.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Radón-->
+<div class="modal fade" id="exampleRadón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RADON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El radón es un gas noble radioactivo que se forma de manera natural a partir de la desintegración del radio en la corteza terrestre. Es incoloro, inodoro e insípido, lo que lo hace difícil de detectar sin equipo especializado. El radón puede filtrarse desde el suelo y acumularse en edificios, especialmente en sótanos y espacios cerrados, donde puede representar un riesgo para la salud humana si se inhala en altas concentraciones. La exposición prolongada al radón aumenta el riesgo de cáncer de pulmón, por lo que es importante realizar pruebas y tomar medidas para reducir los niveles de radón en interiores.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Francio-->
+<div class="modal fade" id="exampleFrancio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">FRANCIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El francio es un elemento químico extremadamente raro y altamente radioactivo. Pertenece al grupo de los metales alcalinos y es el menos estable de todos los elementos alcalinos. Debido a su corta vida media y a su rareza en la naturaleza, el francio solo se encuentra en trazas y no tiene aplicaciones comerciales significativas. Se utiliza principalmente en investigación científica para estudiar sus propiedades y comportamiento.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Radio-->
+<div class="modal fade" id="exampleRadio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RADIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El radio es un elemento químico altamente radioactivo que pertenece al grupo de los metales alcalinotérreos. Es uno de los elementos más pesados y densos que se conocen. El radio se encuentra en la naturaleza como producto de desintegración del uranio y el torio en minerales de la corteza terrestre. Aunque históricamente se utilizó en la fabricación de pintura luminiscente y en la terapia médica, su uso se ha reducido debido a su alta toxicidad y radiactividad.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Actinio-->
+<div class="modal fade" id="exampleActinio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ACTINIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El actinio es un elemento químico metálico que pertenece al grupo de los actínidos. Se encuentra en la naturaleza en minerales de uranio y torio y es altamente radioactivo. Tiene pocas aplicaciones prácticas debido a su rareza y radioactividad, pero se ha utilizado en la producción de neutrones en reactores nucleares y en algunas terapias médicas para el tratamiento del cáncer.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rutherfordio-->
+<div class="modal fade" id="exampleRutherfordio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">RUTHERFORDIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El rutherfordio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1969 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media, alta radiactividad y la dificultad para producirlo, el rutherfordio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dubnio-->
+<div class="modal fade" id="exampleDubnio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DUBNIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El dubnio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1968 por un equipo de científicos rusos. Debido a su corta vida media y alta radiactividad, el dubnio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Seaborgio-->
+<div class="modal fade" id="exampleSeaborgio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SEABORGIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El seaborgio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1974 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media y alta radiactividad, el seaborgio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Bohrio-->
+<div class="modal fade" id="exampleBohrio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BOHRIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El bohrio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1981 por un equipo de científicos rusos y alemanes. Debido a su corta vida media y alta radiactividad, el bohrio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Hassio-->
+<div class="modal fade" id="exampleHassio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HASSIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El hassio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1984 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el hassio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Meitnerio-->
+<div class="modal fade" id="exampleMeitnerio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MEITNERIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El meitnerio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1982 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el meitnerio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Darmstadtio-->
+<div class="modal fade" id="exampleDarmstadtio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DARMSTADTIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El darmstadtio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1994 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el darmstadtio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Roentgenio-->
+<div class="modal fade" id="exampleRoentgenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ROENTGENIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El roentgenio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1994 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el roentgenio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Copernicio-->
+<div class="modal fade" id="exampleCopernicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">COPERNICIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El copernicio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1996 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el copernicio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Nihonio-->
+<div class="modal fade" id="exampleNihonio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NIHONIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El nihonio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 2004 por un equipo de científicos rusos y japoneses. Debido a su corta vida media y alta radiactividad, el nihonio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Flerovio-->
+<div class="modal fade" id="exampleFlerovio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">FLEROVIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El flerovio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1998 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media y alta radiactividad, el flerovio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Moscovio-->
+<div class="modal fade" id="exampleMoscovio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MOSCOVIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El moscovio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 2003 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media y alta radiactividad, el moscovio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Livermorio-->
+<div class="modal fade" id="exampleLivermorio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LIVERMORIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El livermorio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 2000 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media y alta radiactividad, el livermorio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Tenesino-->
+<div class="modal fade" id="exampleTenesino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TENESINO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El tenesio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los metales de transición. Fue sintetizado por primera vez en 1981 por un equipo de científicos alemanes. Debido a su corta vida media y alta radiactividad, el tenesio no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Oganesón-->
+<div class="modal fade" id="exampleOganesón" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">OGANESON</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El oganessón es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los gases nobles. Fue sintetizado por primera vez en 2002 por un equipo de científicos rusos y estadounidenses. Debido a su corta vida media y alta radiactividad, el oganessón no tiene aplicaciones comerciales y se utiliza principalmente en investigación científica para estudiar las propiedades de los elementos superpesados.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Cerio-->
+<div class="modal fade" id="exampleCerio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CERIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El cerio es un elemento químico de la serie de los lantánidos, se encuentra en forma combinada con otros elementos en minerales como la monacita y la cerita. Se utiliza en la fabricación de catalizadores para la industria petroquímica, en la fabricación de vidrios y esmaltes, en la producción de aleaciones especiales y en la industria automotriz, entre otras aplicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Praseodimio-->
+<div class="modal fade" id="examplePraseodimio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PRASEODIMIE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El praseodimio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Es utilizado en aleaciones con otros metales, en la fabricación de imanes permanentes de alta resistencia y en la industria del vidrio y esmaltes, entre otras aplicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Neodimio-->
+<div class="modal fade" id="exampleNeodimio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NEODIMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El neodimio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes permanentes de alta resistencia, que se emplean en una amplia variedad de aplicaciones, incluyendo motores eléctricos, generadores, auriculares, altavoces y discos duros, entre otros.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Prometio-->
+<div class="modal fade" id="examplePrometio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PROMETIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El prometio es un elemento químico radioactivo que pertenece a la serie de los lantánidos. No se encuentra en la naturaleza en forma libre debido a su inestabilidad y corta vida media. Se utiliza en pequeñas cantidades en dispositivos de medición de radiactividad, en baterías nucleares y en algunas terapias médicas, aunque su uso es limitado debido a su toxicidad y dificultades de obtención.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Samario-->
+<div class="modal fade" id="exampleSamario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SAMARIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El samario es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes permanentes de alta resistencia, en la producción de materiales absorbentes de neutrones en reactores nucleares, y en algunos tipos de vidrio y esmaltes, entre otras aplicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Europio-->
+<div class="modal fade" id="exampleEuropio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EUROPIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El europio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de pantallas de televisión y monitores de ordenador para producir luz roja, en la fabricación de tubos catódicos, en la industria de la seguridad para detectores de humo y en la producción de lámparas fluorescentes y LED, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Gadolinio-->
+<div class="modal fade" id="exampleGadolinio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">GADOLINIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El gadolinio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de aleaciones con otros metales, en la fabricación de imanes de alta tecnología para aplicaciones médicas y electrónicas, en la industria del vidrio y en la producción de reactores nucleares, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Terbio-->
+<div class="modal fade" id="exampleTerbio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TERBIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El terbio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes de alta potencia para aplicaciones industriales y electrónicas, en la industria de la iluminación para la producción de lámparas fluorescentes de alta eficiencia y en la investigación científica para estudiar las propiedades magnéticas de los materiales, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Disprosio-->
+<div class="modal fade" id="exampleDisprosio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DISPROSIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El disprosio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes de alta potencia para aplicaciones industriales y electrónicas, en la industria de la iluminación para la producción de lámparas de halogenuros metálicos y en la fabricación de vidrio y cerámica, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Holmio-->
+<div class="modal fade" id="exampleHolmio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HOLMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El holmio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes permanentes de alta potencia para aplicaciones industriales y científicas, en la industria de la iluminación para producir luz de alta intensidad y en la investigación médica para el tratamiento del cáncer y otras enfermedades, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Erbio-->
+<div class="modal fade" id="exampleErbio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ERBIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El erbio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes permanentes de alta potencia para aplicaciones industriales y científicas, en la investigación médica para el tratamiento del cáncer y en la industria nuclear para absorber neutrones en reactores nucleares, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Tulio-->
+<div class="modal fade" id="exampleTulio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TULIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El tulio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de imanes permanentes de alta potencia para aplicaciones industriales y científicas, en la fabricación de dispositivos de detección de rayos X y en la industria nuclear para absorber neutrones en reactores nucleares, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Iterbio-->
+<div class="modal fade" id="exampleIterbio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ITERBIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El iterbio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la fabricación de equipos de láseres de estado sólido, en la producción de dispositivos de detección de rayos X y en la investigación médica para el tratamiento del cáncer y otras enfermedades, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Lutecio-->
+<div class="modal fade" id="exampleLutecio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LUTECIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El lutecio es un elemento químico de la serie de los lantánidos, que se encuentra en la naturaleza en minerales como la monacita y la bastnasita. Se utiliza principalmente en la producción de cristales de alta pureza para la fabricación de dispositivos de detección de radiación, en la investigación científica para estudiar las propiedades de los materiales y en algunos tipos de aleaciones especiales, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Torio-->
+<div class="modal fade" id="exampleTorio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">TORIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El torio es un elemento químico metálico que pertenece al grupo de los actínidos. Se encuentra en la naturaleza en minerales de torio y es altamente radioactivo. Tiene diversas aplicaciones, como en la industria nuclear como combustible para reactores nucleares, en la fabricación de aleaciones metálicas y en la producción de lámparas de gas de tungsteno, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Protactinio-->
+<div class="modal fade" id="exampleProtactinio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PROTACTINIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El protactinio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se encuentra en la naturaleza en pequeñas cantidades. Tiene algunas aplicaciones en la industria nuclear, como en la producción de neutrones en reactores nucleares y en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Uranio-->
+<div class="modal fade" id="exampleUranio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">URANIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El uranio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se encuentra en la naturaleza en minerales de uranio. Tiene diversas aplicaciones, principalmente en la industria nuclear, como combustible para reactores nucleares y en la fabricación de armas nucleares. También se utiliza en la industria para la fabricación de vidrio y cerámica, entre otros usos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Neptunio-->
+<div class="modal fade" id="exampleNeptunio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NEPTUNIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El neptunio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se encuentra en la naturaleza en minerales de uranio. Tiene aplicaciones principalmente en la industria nuclear, como en la fabricación de armas nucleares y en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Plutonio-->
+<div class="modal fade" id="examplePlutonio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLUTONIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El plutonio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en reactores nucleares. Tiene diversas aplicaciones, principalmente en la industria nuclear, como en la fabricación de armas nucleares, en la generación de energía nuclear y en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Americio-->
+<div class="modal fade" id="exampleAmericio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">AMERICIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El americio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en reactores nucleares. Tiene algunas aplicaciones en la industria, como en la fabricación de detectores de humo para alarmas contra incendios, en la medicina nuclear para tratamientos de radioterapia y en la investigación científica para estudiar la radiactividad y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Curio-->
+<div class="modal fade" id="exampleCurio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CURIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El curio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en reactores nucleares. Tiene algunas aplicaciones en la industria, principalmente en la investigación científica para estudiar la radiactividad y otras propiedades de los materiales radiactivos. También se utiliza en la medicina nuclear para tratamientos de radioterapia y en la fabricación de detectores de partículas subatómicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Berkelio-->
+<div class="modal fade" id="exampleBerkelio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BERKELIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El berkelio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en laboratorios nucleares. Tiene pocas aplicaciones prácticas debido a su rareza y radioactividad, pero se utiliza en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Californio-->
+<div class="modal fade" id="exampleCalifornio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CALIFORNIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El californio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en laboratorios nucleares. Tiene algunas aplicaciones en la industria, principalmente en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos. También se utiliza en la medicina nuclear para tratamientos de radioterapia y en la fabricación de detectores de partículas subatómicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Einstenio-->
+<div class="modal fade" id="exampleEinstenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EINSTENIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El einstenio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en laboratorios nucleares. Tiene pocas aplicaciones prácticas debido a su rareza y radioactividad, pero se utiliza en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Fermio-->
+<div class="modal fade" id="exampleFermio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">FERMIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El fermio es un elemento químico metálico que pertenece al grupo de los actínidos. Es altamente radioactivo y se produce artificialmente en laboratorios nucleares. Tiene pocas aplicaciones prácticas debido a su rareza y radioactividad, pero se utiliza en la investigación científica para estudiar la fisión nuclear y otras propiedades de los materiales radiactivos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mendelevio-->
+<div class="modal fade" id="exampleMendelevio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MENDELEVIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El mendelevio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los actínidos. Se produce artificialmente en laboratorios nucleares y tiene pocas aplicaciones prácticas debido a su rareza y radioactividad. Principalmente se utiliza en la investigación científica para estudiar la estructura atómica y las propiedades de los elementos transuránicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Nobelio-->
+<div class="modal fade" id="exampleNobelio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NOBELIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El nobelio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los actínidos. Se produce artificialmente en laboratorios nucleares y tiene pocas aplicaciones prácticas debido a su rareza y radioactividad. Principalmente se utiliza en la investigación científica para estudiar la estructura atómica y las propiedades de los elementos transuránicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Lawrencio-->
+<div class="modal fade" id="exampleLawrencio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LAWRENCIO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El laurencio es un elemento químico sintético y altamente radioactivo que pertenece al grupo de los actínidos. Se produce artificialmente en laboratorios nucleares y tiene pocas aplicaciones prácticas debido a su rareza y radioactividad. Principalmente se utiliza en la investigación científica para estudiar la estructura atómica y las propiedades de los elementos transuránicos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

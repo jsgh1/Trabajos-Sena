@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>  
+    <div class="container">
+      <div class="col-12 row formulario">
+        <div class="col-8 forma">
+          <form class="row g-3 needs-validation" novalidate onsubmit="return edades()">
+            <div class="col-md-4">
+              <label for="txtnacimiento1" class="form-label">Fecha de nacimiento 1</label>
+              <input type="text" class="form-control" id="txtnacimiento1" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="txtnacimiento2" class="form-label">Fecha de nacimiento 2</label>
+              <input type="text" class="form-control" id="txtnacimiento2" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="txtnacimiento3" class="form-label">Fecha de nacimiento 3</label>
+              <input type="text" class="form-control" id="txtnacimiento3" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-10">
+              <button class="btn btn-primary" type="button" onclick="edades()">Ejecutar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-4 respuesta">
+          <h1>RESPUESTA</h1>
+          <div id="rango1"></div>
+          <div id="rango2"></div>
+          <div id="rango3"></div>
+          <div id="rango4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/validar.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/edades.js"></script>
+</body>
+</html>

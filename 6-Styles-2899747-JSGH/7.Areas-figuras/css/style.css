@@ -1,0 +1,50 @@
+/**
+Estilos de Areas de tres figuras (cuadrado, triangulo, rectangulo)
+Martin Stiben Narvaez
+Lunes 17 de Junio del 2024
+*/
+
+.formulario{
+    display: flexbox;
+    flex-wrap: nowrap;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+.forma, .respuesta{
+    border:2px solid #000;
+    margin:10px;
+    padding:5px;
+    border-radius: 6px;
+}
+
+.forma{
+    padding: 30px;
+}
+
+#figura {
+    width: 120;
+    height: 120;
+    border:2px solid #000;
+}
+
+#cuadrado {
+    width: 100px; /* Puedes ajustar el tamaño */
+    height: 100px;
+    background-color: blue; /* Puedes cambiar el color */
+}
+
+#triangulo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Puedes ajustar el tamaño */
+    border-right: 50px solid transparent; /* Puedes ajustar el tamaño */
+    border-bottom: 100px solid red; /* Puedes cambiar el color */
+}
+
+#rectangulo {
+    width: 200px; /* Puedes ajustar el tamaño */
+    height: 100px; 
+    background-color: green; /* Puedes cambiar el color */
+}
